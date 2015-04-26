@@ -11,13 +11,105 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
+    // contains the grid
 
-  
-    
-    
-    
-   
-    
-    
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:orientation="vertical" >
+
+        // contains the grid
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="12"
+            android:numRows="12"
+            android:columnWidth="23dp"
+            android:rowWidth="23dp"
+            
+             >
+            
+            
+            
+            
+        </GridView>
+
+        
+        
+        
+        
+        
+        
+    </LinearLayout>
+    // contains the buttons
+
+    <LinearLayout
+        android:layout_width="260"
+        android:layout_height="100"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="260"
+            android:layout_height="50" >
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="130"
+                android:layout_height="wrap_content"
+                android:text="Hit" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="130"
+                android:layout_height="wrap_content"
+                android:text="Miss" />
+
+         
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260"
+            android:layout_height="50" >
+
+            <Button
+                android:id="@+id/button4"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50"
+                android:layout_height="wrap_content"
+                android:text="5" />
+            
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
