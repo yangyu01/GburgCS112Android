@@ -249,10 +249,17 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f040012;
-        public static final int action_settings=0x7f040013;
+        public static final int action_settings=0x7f04001a;
         public static final int alignBounds=0x7f040002;
         public static final int alignMargins=0x7f040003;
         public static final int bottom=0x7f040005;
+        public static final int button1=0x7f040013;
+        public static final int button2=0x7f040014;
+        public static final int button4=0x7f040015;
+        public static final int button5=0x7f040016;
+        public static final int button6=0x7f040017;
+        public static final int button7=0x7f040018;
+        public static final int button8=0x7f040019;
         public static final int center=0x7f04000c;
         public static final int center_horizontal=0x7f04000a;
         public static final int center_vertical=0x7f040008;
