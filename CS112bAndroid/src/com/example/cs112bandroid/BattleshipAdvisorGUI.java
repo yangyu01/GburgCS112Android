@@ -112,6 +112,7 @@ public class BattleshipAdvisorGUI extends JFrame {
 			for (String imageString : imageStrings) 
 				imageMap.put(imageString, new ImageIcon(imageString + ".png"));
 			// 2) row label images
+			// called the labels "labela.png"
 			for (int i = (int) 'a'; i <= (int) 'j'; i++)
 				imageMap.put("label" + (char) i, new ImageIcon("label" + (char) i + ".png"));
 			// 3) column label images
