@@ -46,7 +46,7 @@ int id a6 0x7f040026
 int id a7 0x7f040027
 int id a8 0x7f040028
 int id a9 0x7f040029
-int id action_settings 0x7f04009e
+int id action_settings 0x7f04009f
 int id alignBounds 0x7f040002
 int id alignMargins 0x7f040003
 int id b1 0x7f04002d
@@ -63,6 +63,7 @@ int id blank 0x7f040014
 int id bottom 0x7f040005
 int id button1 0x7f040097
 int id button2 0x7f040098
+int id button3 0x7f04009e
 int id button4 0x7f040099
 int id button5 0x7f04009a
 int id button6 0x7f04009b

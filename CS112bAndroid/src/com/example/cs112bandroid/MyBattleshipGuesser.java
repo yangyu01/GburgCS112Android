@@ -50,6 +50,8 @@ public class MyBattleshipGuesser implements BattleshipGuesser {
 		sinkCount = 0;
 		hitstory.clear();	
 	}
+	
+	
 
 	@Override
 	public Position getGuess() {

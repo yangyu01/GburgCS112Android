@@ -1,5 +1,6 @@
 package com.example.cs112bandroid;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.app.Activity;
@@ -14,7 +15,7 @@ public class MainActivity extends Activity {
 	//Testing by Dean
 		
 	HashMap<String, View> views = new HashMap<String, View>(); 
-	
+	MyBattleshipGuesser mbg = new MyBattleshipGuesser();
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,8 +29,135 @@ public class MainActivity extends Activity {
 		Button four = (Button) findViewById(R.id.button7);
 		Button five = (Button) findViewById(R.id.button8);
 		
+		Button restart = (Button) findViewById(R.id.button3);
+		
 		initializeViews();
+		
+		restart.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				reset();
+			}
+
+			
+		});
 	}
+	
+	private void reset() {
+		// sets all the variables to unknown
+		mbg.initialize();
+		
+		// sets all the images to unknown
+		views.get("a1").setBackgroundResource(R.drawable.unknown);
+		views.get("a2").setBackgroundResource(R.drawable.unknown);
+		views.get("a3").setBackgroundResource(R.drawable.unknown);
+		views.get("a4").setBackgroundResource(R.drawable.unknown);
+		views.get("a5").setBackgroundResource(R.drawable.unknown);
+		views.get("a6").setBackgroundResource(R.drawable.unknown);
+		views.get("a7").setBackgroundResource(R.drawable.unknown);
+		views.get("a8").setBackgroundResource(R.drawable.unknown);
+		views.get("a9").setBackgroundResource(R.drawable.unknown);
+		views.get("a10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("b1").setBackgroundResource(R.drawable.unknown);
+		views.get("b2").setBackgroundResource(R.drawable.unknown);
+		views.get("b3").setBackgroundResource(R.drawable.unknown);
+		views.get("b4").setBackgroundResource(R.drawable.unknown);
+		views.get("b5").setBackgroundResource(R.drawable.unknown);
+		views.get("b6").setBackgroundResource(R.drawable.unknown);
+		views.get("b7").setBackgroundResource(R.drawable.unknown);
+		views.get("b8").setBackgroundResource(R.drawable.unknown);
+		views.get("b9").setBackgroundResource(R.drawable.unknown);
+		views.get("b10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("c1").setBackgroundResource(R.drawable.unknown);
+		views.get("c2").setBackgroundResource(R.drawable.unknown);
+		views.get("c3").setBackgroundResource(R.drawable.unknown);
+		views.get("c4").setBackgroundResource(R.drawable.unknown);
+		views.get("c5").setBackgroundResource(R.drawable.unknown);
+		views.get("c6").setBackgroundResource(R.drawable.unknown);
+		views.get("c7").setBackgroundResource(R.drawable.unknown);
+		views.get("c8").setBackgroundResource(R.drawable.unknown);
+		views.get("c9").setBackgroundResource(R.drawable.unknown);
+		views.get("c10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("d1").setBackgroundResource(R.drawable.unknown);
+		views.get("d2").setBackgroundResource(R.drawable.unknown);
+		views.get("d3").setBackgroundResource(R.drawable.unknown);
+		views.get("d4").setBackgroundResource(R.drawable.unknown);
+		views.get("d5").setBackgroundResource(R.drawable.unknown);
+		views.get("d6").setBackgroundResource(R.drawable.unknown);
+		views.get("d7").setBackgroundResource(R.drawable.unknown);
+		views.get("d8").setBackgroundResource(R.drawable.unknown);
+		views.get("d9").setBackgroundResource(R.drawable.unknown);
+		views.get("d10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("e1").setBackgroundResource(R.drawable.unknown);
+		views.get("e2").setBackgroundResource(R.drawable.unknown);
+		views.get("e3").setBackgroundResource(R.drawable.unknown);
+		views.get("e4").setBackgroundResource(R.drawable.unknown);
+		views.get("e5").setBackgroundResource(R.drawable.unknown);
+		views.get("e6").setBackgroundResource(R.drawable.unknown);
+		views.get("e7").setBackgroundResource(R.drawable.unknown);
+		views.get("e8").setBackgroundResource(R.drawable.unknown);
+		views.get("e9").setBackgroundResource(R.drawable.unknown);
+		views.get("e10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("f1").setBackgroundResource(R.drawable.unknown);
+		views.get("f2").setBackgroundResource(R.drawable.unknown);
+		views.get("f3").setBackgroundResource(R.drawable.unknown);
+		views.get("f4").setBackgroundResource(R.drawable.unknown);
+		views.get("f5").setBackgroundResource(R.drawable.unknown);
+		views.get("f6").setBackgroundResource(R.drawable.unknown);
+		views.get("f7").setBackgroundResource(R.drawable.unknown);
+		views.get("f8").setBackgroundResource(R.drawable.unknown);
+		views.get("f9").setBackgroundResource(R.drawable.unknown);
+		views.get("f10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("g1").setBackgroundResource(R.drawable.unknown);
+		views.get("g2").setBackgroundResource(R.drawable.unknown);
+		views.get("g3").setBackgroundResource(R.drawable.unknown);
+		views.get("g4").setBackgroundResource(R.drawable.unknown);
+		views.get("g5").setBackgroundResource(R.drawable.unknown);
+		views.get("g6").setBackgroundResource(R.drawable.unknown);
+		views.get("g7").setBackgroundResource(R.drawable.unknown);
+		views.get("g8").setBackgroundResource(R.drawable.unknown);
+		views.get("g9").setBackgroundResource(R.drawable.unknown);
+		views.get("g10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("h1").setBackgroundResource(R.drawable.unknown);
+		views.get("h2").setBackgroundResource(R.drawable.unknown);
+		views.get("h3").setBackgroundResource(R.drawable.unknown);
+		views.get("h4").setBackgroundResource(R.drawable.unknown);
+		views.get("h5").setBackgroundResource(R.drawable.unknown);
+		views.get("h6").setBackgroundResource(R.drawable.unknown);
+		views.get("h7").setBackgroundResource(R.drawable.unknown);
+		views.get("h8").setBackgroundResource(R.drawable.unknown);
+		views.get("h9").setBackgroundResource(R.drawable.unknown);
+		views.get("h10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("i1").setBackgroundResource(R.drawable.unknown);
+		views.get("i2").setBackgroundResource(R.drawable.unknown);
+		views.get("i3").setBackgroundResource(R.drawable.unknown);
+		views.get("i4").setBackgroundResource(R.drawable.unknown);
+		views.get("i5").setBackgroundResource(R.drawable.unknown);
+		views.get("i6").setBackgroundResource(R.drawable.unknown);
+		views.get("i7").setBackgroundResource(R.drawable.unknown);
+		views.get("i8").setBackgroundResource(R.drawable.unknown);
+		views.get("i9").setBackgroundResource(R.drawable.unknown);
+		views.get("i10").setBackgroundResource(R.drawable.unknown);
+		
+		views.get("j1").setBackgroundResource(R.drawable.unknown);
+		views.get("j2").setBackgroundResource(R.drawable.unknown);
+		views.get("j3").setBackgroundResource(R.drawable.unknown);
+		views.get("j4").setBackgroundResource(R.drawable.unknown);
+		views.get("j5").setBackgroundResource(R.drawable.unknown);
+		views.get("j6").setBackgroundResource(R.drawable.unknown);
+		views.get("j7").setBackgroundResource(R.drawable.unknown);
+		views.get("j8").setBackgroundResource(R.drawable.unknown);
+		views.get("j9").setBackgroundResource(R.drawable.unknown);
+		views.get("j10").setBackgroundResource(R.drawable.unknown);
+	}
+	
 	
 	void initializeViews() {
 		views.put("a1", (View) findViewById(R.id.a1));
